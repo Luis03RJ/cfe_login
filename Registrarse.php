@@ -14,8 +14,6 @@
            <script src="animacion.js"></script>
 
      <script src=https://cdn.jsdelivr.net/npm/sweetalert2@11></script>
-         <link id="ctl00_favicon" rel="shortcut&#32;icon" href="favico.png" type="image/vnd.microsoft.icon" /><link rel="stylesheet" href="https://www.cfe.mx/cdn/2019/assets/css/cfe.css" />
-
 </head>
 
 <body>
@@ -49,8 +47,6 @@
             <img src="ojo.png" id="pass_icon" class="icon">
             </div>
 
-
-
              <!-- Depaertamento -->
              <div class="field">
                 <!-- <select name="departamento" id="departamento" required>
@@ -77,21 +73,12 @@
                  <!-- </select> -->
                 <label for="role_id">Departamento</label>
             </div> 
-
-
-
-
-
-
-                      
+                    
             <!-- Puesto/ ocupación -->
             <div class="field">
                 <input type="text" required name="puesto">
                 <label for="">Puesto/Ocupación</label>
             </div>
-
-
-
 
             <!-- ROL  -->
             <div class="field">
@@ -103,9 +90,6 @@
                 <label for="role_id">ROL</label>
             </div>
 
-
-
-
             <div class="field">
                 <input type="submit" value="Registrar">
             </div>
@@ -116,8 +100,6 @@
     </div>
     
 </body>
-
-<!-- Para visualizar el icono del ojo -->
 
 
 </html>
