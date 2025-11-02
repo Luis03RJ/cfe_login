@@ -29,13 +29,33 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             // $_SESSION['nombre_departamento'] = $user['nombre_departamento']; 
             // $_SESSION['nombre_rol'] = $user['nombre_rol'];
 
+            //Para Administrador 
             if($user['role_id'] == 1){
                 header('Location: ../Home/dashboard.php');
                 exit();
-            }elseif ($user['departamento_id'] == 4) {
+                // Para departamento 1 
+            }elseif ($user['departamento_id'] == 1) {
                 header('Location: ../Home/dashboarduser.php');
                 exit();
-            }else {
+                 // Para departamento 2
+            }elseif ($user['departamento_id'] == 2) {
+                header('Location: ../Home/Departamento2.html');
+                exit();
+                 // Para departamento 3
+            }elseif ($user['departamento_id'] == 3) {
+                 header('Location: ../Home/Departamento3.html');
+                exit();
+                 // Para departamento 4
+            }elseif ($user['departamento_id'] == 4) {
+                 header('Location: ../Home/Departamento4.html');
+                exit();
+            }
+            
+            
+            
+            
+            
+            else {
                 echo 'Acceso Denegado AAA';
 
             }

@@ -91,7 +91,7 @@ CREATE TABLE `usuarios` (
   KEY `fk_usuario_roles` (`role_id`),
   CONSTRAINT `fk_usuario_departamento` FOREIGN KEY (`departamento_id`) REFERENCES `departamentos` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_usuario_roles` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -100,7 +100,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (10,'xxx','$2y$10$qMDDMtIMsJ2nKga/exg4qudOhlDnBIodT','xxx',4,'xxx',1),(13,'aaa','$2y$10$6WtExke3Tl6aKV//DnhdOeZ214.zhPVsp','aaa',1,'aaa',1),(14,'zzz','$2y$10$QCVajrgBmLtB1nc3XYxzuuxBUbFahjHox','zzz',1,'zzz',2),(15,'ccc','$2y$10$p47XArKwitoCt.Z76iVCleoeyukH14eNHvXDH3Zzq0dxlaEHoFOGO','ccc',1,'ccc',1),(16,'vvv','$2y$10$RY0oxiNLSovw4BCrE0pb9.Ts/ysdU/G0KbKkTvkOMK8XQmn0VCQtq','vvv',1,'vvv',2),(17,'bbb','$2y$10$9lkhN4SEVeopiz2XoEI7We7g0nReZnR5rc.fU/agmN8PxG1keLaqG','bbb',1,'bbb',2),(18,'nnn','$2y$10$3.tTGkA4Acj5Lz/5WU/LSOkpIWvx0MhVvDIaSiMZwRlsf/2Da1up.','nnn',1,'nnn',2),(19,'sss','$2y$10$aXk30mklVdXKrPr1yI2DsudJMjCkV6rXmwtTerja2.KkAFkU0yNBy','sss',4,'sss',2),(20,'luis','$2y$10$F5ntEraLb11YCcKlsRXbne7Y9bpIRpMBI6eytVxlbpGNz3KNTdKxS','luis',1,'luis',1),(21,'juan','$2y$10$hgW5bs06t.1o/mrVg9Vg5evKCy/li6SF8Jlak8R7imWjmrIcVvpRm','juan',4,'juan',2);
+INSERT INTO `usuarios` VALUES (10,'xxx','$2y$10$qMDDMtIMsJ2nKga/exg4qudOhlDnBIodT','xxx',4,'xxx',1),(13,'aaa','$2y$10$6WtExke3Tl6aKV//DnhdOeZ214.zhPVsp','aaa',1,'aaa',1),(14,'zzz','$2y$10$QCVajrgBmLtB1nc3XYxzuuxBUbFahjHox','zzz',1,'zzz',2),(15,'ccc','$2y$10$p47XArKwitoCt.Z76iVCleoeyukH14eNHvXDH3Zzq0dxlaEHoFOGO','ccc',1,'ccc',1),(16,'vvv','$2y$10$RY0oxiNLSovw4BCrE0pb9.Ts/ysdU/G0KbKkTvkOMK8XQmn0VCQtq','vvv',1,'vvv',2),(17,'bbb','$2y$10$9lkhN4SEVeopiz2XoEI7We7g0nReZnR5rc.fU/agmN8PxG1keLaqG','bbb',1,'bbb',2),(18,'nnn','$2y$10$3.tTGkA4Acj5Lz/5WU/LSOkpIWvx0MhVvDIaSiMZwRlsf/2Da1up.','nnn',1,'nnn',2),(19,'sss','$2y$10$aXk30mklVdXKrPr1yI2DsudJMjCkV6rXmwtTerja2.KkAFkU0yNBy','sss',4,'sss',2),(20,'luis','$2y$10$F5ntEraLb11YCcKlsRXbne7Y9bpIRpMBI6eytVxlbpGNz3KNTdKxS','luis',1,'luis',1),(21,'juan','$2y$10$hgW5bs06t.1o/mrVg9Vg5evKCy/li6SF8Jlak8R7imWjmrIcVvpRm','juan',4,'juan',2),(22,'zzz','$2y$10$2LgOTh1qVfc.sH5CKMFpbu5rbmQYcxtsEsEoAdHgvkHXhgzvxJSXK','zzz',1,'zzz',1),(23,'depa1','$2y$10$TuzYrvMoJmsKuJrdnvAdVeTPjGqVoLXHsP7gU4RFNI667hN9DlyGO','depa1',1,'depa1',2),(24,'depa2','$2y$10$6Ikv6Pb5D6w8ZpBGanIGouA0voYDVWRXGdYL2yv6Hl6I/fcFlihAS','depa2',2,'depa2',2),(25,'depa3','$2y$10$bxaaPcsBx4KfIwry4SDYH.1SjI6ao4pThenO.npDrkleSpesQ7Xee','depa3',3,'depa3',2),(26,'depa4','$2y$10$nndLu22XlewWcIHOOuvF9.QC8IX20hwr57ks2f1SRzHOtqUaHk1c2','depa4',4,'depa4',2),(27,'admin','$2y$10$Go0o5/oywYNngbsVmb2QceSkwVaDY4cxcg7sjY2YvNjOa4PdpUgly','admin',1,'admin',1);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -121,4 +121,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-02  1:20:10
+-- Dump completed on 2025-11-02  1:38:30
